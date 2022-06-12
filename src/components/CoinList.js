@@ -1,5 +1,6 @@
 import React from "react";
 import "./CoinList.css";
+import { useNavigate } from "react-router-dom";
 
 const CoinList = ({
   id,
@@ -10,6 +11,8 @@ const CoinList = ({
   marketCap,
   priceChange,
 }) => {
+  const navigate = useNavigate();
+
   return (
     <div className="coin-container">
       <div className="coin-row">
@@ -24,7 +27,14 @@ const CoinList = ({
             <p className="coin-price-change green">{priceChange.toFixed(2)}%</p>
           )}
           <p className="coin-market-cap">$ {marketCap.toLocaleString()}</p>
-          <button className="more-info-button">More Info</button>
+          <button
+            className="more-info-button"
+            onClick={() => {
+              navigate(`/coin/${id}`);
+            }}
+          >
+            More Info
+          </button>
         </div>
       </div>
     </div>
