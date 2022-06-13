@@ -21,38 +21,43 @@
 .coin img {
   height: 50px;
   width: 50px;
-  
+  margin-right: 10px;
 }
 
 .coin-name {
   color: white;
   text-align: left;
+  width: 150px;
+  margin-left: 30px;
 }
 
 .coin-symbol {
   text-transform: uppercase;
   color: white;
-  
+  width: 50px;
 }
 
 .coin-price {
   color: white;
   text-align: left;
+  width: 100px;
 }
 
 .coin-price-change {
+  width: 90px;
   text-align: left;
 }
 
 .red {
-  color: red;
+  color: #f00606;
 }
 
 .green {
-  color: green;
+  color: #11d811;
 }
 
 .coin-market-cap {
+  width: 150px;
   color: white;
   text-align: left;
 }

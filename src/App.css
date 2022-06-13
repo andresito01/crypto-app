@@ -57,6 +57,10 @@ body {
   transition: all ease-in-out 0.2s;
 }
 
+.button-container img:active {
+  transform: rotate(-180deg);
+}
+
 .coinlist-container {
   width: 100%;
 }

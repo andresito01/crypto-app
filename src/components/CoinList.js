@@ -1,5 +1,5 @@
 import React from "react";
-import "./CoinList.css";
+import "./styles/CoinList.css";
 import { useNavigate } from "react-router-dom";
 
 const CoinList = ({
@@ -15,6 +15,7 @@ const CoinList = ({
 
   return (
     <div className="coin-container">
+      <div className="coin-container-header"></div>
       <div className="coin-row">
         <div className="coin">
           <img alt="coin-icon" src={icon}></img>
